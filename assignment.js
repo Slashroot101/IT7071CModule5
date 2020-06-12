@@ -23,7 +23,7 @@ $(document).ready((e) => {
 																	})
 																	.join('\n');
 			$('#displayForm').show();
-			$('#result').html(displayArray);
+			$('#result').html(displayArray === '' ? 'No anomolies found! ' : displayArray);
 			console.log(anomolies)
 		});
 	});
